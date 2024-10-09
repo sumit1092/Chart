@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KPI Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <p>KPI Overview &nbsp; &nbsp; Q4 2023</p>
+          </header>
+
+          <main class="dashboard">
+            <!-- Section 1-->
+            <section class="kpi-card">
+              <h2>Revenue Actual VS Target</h2>
+              <div class="kpi-data">
+                <div class="data">
+                  <p class="actual">$2,180,000</p>
+                  <p class="title">Actual Revenue</p>
+                </div>
+                <div class="data">
+                  <p class="target">$2,325,000</p>
+                  <p class="title">Target Revenue</p>
+                </div>
+                <div class="data">
+                  <p class="achievement">94%</p>
+                  <p class="title">Achievement</p>
+                </div>
+              </div>
+              <div>
+                <h2 class="">Q4 2023 Revenue compared to previous year</h2>
+                <canvas id="revenueChart"></canvas>
+              </div>
+            </section>
+          
+            <!-- Section 2-->
+            <section class="kpi-card">
+              <h2>New Customers Actual VS Target</h2>
+              <div class="kpi-data">
+                <div class="data">
+                  <p class="actual">309</p>
+                  <p class="title">Actual Customers</p>
+                </div>
+                <div class="data">
+                  <p class="target">300</p>
+                  <p class="title">Target Customers</p>
+                </div>
+                <div class="data">
+                  <p class="achievement">103%</p>
+                  <p class="title">Achievement</p>
+                </div>
+              </div>
+              <div>
+                <h2 class="">Q4 2023 New Customers compared to previous year</h2>
+                <canvas id="customersChart"></canvas>
+              </div>
+            </section>
+          
+            <!-- Section 3-->
+            <section class="kpi-card">
+              <h2>Avg. Revenue per Customer</h2>
+              <div class="kpi-data">
+                <div class="data">
+                  <p class="actual">$1,987</p>
+                  <p class="title">Actual</p>
+                </div>
+                <div class="data">
+                  <p class="target">$2,500</p>
+                  <p class="title">Target</p>
+                </div>
+                <div class="data">
+                  <p class="achievement">79%</p>
+                  <p class="title">Achievement</p>
+                </div>
+              </div>
+              <div>
+                <h2 class="">Q4 2023 Avg. Revenue per Customer compared to previous year</h2>
+                <canvas id="revenuePerCustomerChart"></canvas>
+              </div>
+            </section>
+          
+            <!-- Section 4-->
+            <section class="kpi-card">
+              <h2>Customer Acquisition Cost</h2>
+              <div class="kpi-data">
+                <div class="data">
+                  <p class="actual">$372</p>
+                  <p class="title">Actual CAC</p>
+                </div>
+                <div class="data">
+                  <p class="target">$333</p>
+                  <p class="title">Target CAC</p>
+                </div>
+                <div class="data">
+                  <p class="achievement">112%</p>
+                  <p class="title">Target Achievement</p>
+                </div>
+              </div>
+              <div>
+                <h2 class="">Q4 2023 Customer Acquisition Cost compared to previous year</h2>
+                <canvas id="cacChart"></canvas>
+              </div>
+            </section>
+          </main>
+          
+
+          <!-- Footer Section -->
+          <footer>
+            <div class="footer">
+                <div class="total">
+                    <p class="total-title title-1">Total Revenue per Year</p>
+                    <h3 class="total-amount">$9,255,000</h3>
+                </div>
+                <div class="total">
+                    <p class="total-title title-2">Total Customers per </p>
+                    <h3 class="total-amount">3,799</h3>
+                </div>
+                <div class="total">
+                    <p class="total-title title-3">New Customers per </p>
+                    <h3 class="total-amount">1,228</h3>
+                </div>
+                <div class="total">
+                    <p class="total-title title-4">Revenue per Customer</p>
+                    <h3 class="total-amount">$2,436.17</h3>
+                </div>
+            </div>
+          </footer>
+    </div>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>
